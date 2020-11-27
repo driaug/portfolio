@@ -18,10 +18,10 @@ function App() {
           </div>
           <div className={"modal-content"}>
             <p>
-              Hi there! I am Dries. A 19-year old Full-Stack TypeScript
-              developer. I am continuously looking for new opportunities and
-              ways how I can improve our society. Using the newest technologies
-              I create webapplications that are future-ready. Feel free to reach
+              Hi there! I am Dries. A 19-year old Full-Stack TypeScript engineer
+              from Belgium. I am always on the lookout for oppurtunities to
+              improve my skills and our society. Using the newest technologies I
+              create webapplications that are future-ready. Feel free to reach
               out to me!
             </p>
             <hr />
@@ -64,7 +64,7 @@ function App() {
             <div className={"text-muted"}>
               <p>
                 Hello! My name is Dries and I am a Full-Stack TypeScript
-                Developer.
+                Engineer.
               </p>
             </div>
             <button onClick={(e) => setOpen(true)}>
