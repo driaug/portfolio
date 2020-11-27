@@ -19,10 +19,10 @@ function App() {
           <div className={"modal-content"}>
             <p>
               Hi there! I am Dries. A 19-year old Full-Stack TypeScript engineer
-              from Belgium. I am always on the lookout for oppurtunities to
+              from Belgium. I am always on the lookout for opportunities to
               improve my skills and our society. Using the newest technologies I
-              create webapplications that are future-ready. Feel free to reach
-              out to me!
+              create software that is future-ready. Feel free to reach out to
+              me!
             </p>
             <hr />
           </div>
