@@ -53,6 +53,7 @@ html,body, #root, .App, .content {
     }
 
     .modal-close {
+      cursor: pointer;
       border-radius: 50%;
       width: 30px;
       height: 30px;
@@ -138,6 +139,7 @@ body {
   }
 
   button {
+    cursor: pointer;
     border: none;
     font-family: 'Circular Std Medium', sans-serif;
     background-color: #6320EE;
