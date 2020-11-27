@@ -12,7 +12,7 @@ function App() {
         <div className={"modal"}>
           <div className={"baseline"}>
             <button className={"modal-close"} onClick={(e) => setOpen(false)}>
-              x
+              ×
             </button>
             <h1>Get in touch!</h1>
           </div>

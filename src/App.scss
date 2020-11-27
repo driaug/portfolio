@@ -54,8 +54,9 @@ html,body, #root, .App, .content {
 
     .modal-close {
       border-radius: 50%;
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
+      font-size: 1.2rem;
       margin-left: auto;
       background-color: #fff;
       color: #6320EE;
@@ -75,6 +76,7 @@ html,body, #root, .App, .content {
         color: rgba(0,0,0,0.5);
         font-size: 0.90rem;
         width: 90%;
+        line-height: 1.4rem;
       }
 
       hr{
