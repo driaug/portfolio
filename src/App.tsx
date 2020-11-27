@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GitHub, Mail, Linkedin } from "react-feather";
 import "./App.scss";
+import { CurrentSong } from "./CurrentSong";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,6 @@ function App() {
             </p>
             <hr />
           </div>
-
           <ul>
             <li>
               <a
@@ -57,37 +57,42 @@ function App() {
         </div>
       </div>
       <div className={open ? "content shade" : "content"}>
-        <div className={"col-6"}>
-          {" "}
-          <h1>Dries Augustyns</h1>
-          <div className={"text-muted"}>
-            <p>
-              Hello! My name is Dries and I am a Full-Stack TypeScript
-              Developer.
-            </p>
-          </div>
-          <button onClick={(e) => setOpen(true)}>
-            <div>
-              <span>G</span>
-              <span>e</span>
-              <span>t&nbsp;</span>
-              <span>i</span>
-              <span>n&nbsp;</span>
-              <span>t</span>
-              <span>o</span>
-              <span>u</span>
-              <span>c</span>
-              <span>h</span>
+        <div className={"row-9"}>
+          <div className={"col-6"}>
+            {" "}
+            <h1>Dries Augustyns</h1>
+            <div className={"text-muted"}>
+              <p>
+                Hello! My name is Dries and I am a Full-Stack TypeScript
+                Developer.
+              </p>
             </div>
-          </button>
+            <button onClick={(e) => setOpen(true)}>
+              <div>
+                <span>G</span>
+                <span>e</span>
+                <span>t&nbsp;</span>
+                <span>i</span>
+                <span>n&nbsp;</span>
+                <span>t</span>
+                <span>o</span>
+                <span>u</span>
+                <span>c</span>
+                <span>h</span>
+              </div>
+            </button>
+          </div>
+          <div className={"col-4"}>
+            {" "}
+            <img
+              src="dries.png"
+              className={"headshot"}
+              alt="Headshot of Dries Augustyns"
+            />
+          </div>
         </div>
-        <div className={"col-4"}>
-          {" "}
-          <img
-            src="dries.png"
-            className={"headshot"}
-            alt="Headshot of Dries Augustyns"
-          />
+        <div className={"row-1"}>
+          <CurrentSong />
         </div>
       </div>
     </div>
