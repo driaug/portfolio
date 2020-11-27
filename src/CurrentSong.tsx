@@ -6,7 +6,12 @@ export const CurrentSong = () => {
   const lastFM = useLastFM("driaug", "b10a87f2b9171ea735ccf53125a9b8a2");
 
   if (lastFM.status !== "playing") {
-    return <p>Not listening to anything</p>;
+    return (
+      <div className={"music-container"}>
+        <Music />
+        <p>&nbsp;Not listening to anything</p>
+      </div>
+    );
   }
 
   return (
