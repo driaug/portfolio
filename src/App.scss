@@ -58,14 +58,16 @@ html,body, #root, .App, .content {
       border-radius: 50%;
       width: 30px;
       height: 30px;
-      font-size: 1.2rem;
+      font-size: 20px;
+      padding: auto;
+      text-align: center;
       margin-left: auto;
       background-color: #fff;
       color: #6320EE;
       border: 2px solid #6320EE;
       order: 1;
       outline: none;
-      transition: all 0.3s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     .modal-close:hover {

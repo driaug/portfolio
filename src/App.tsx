@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { GitHub, Mail, Linkedin } from "react-feather";
 import "./App.scss";
 import { CurrentSong } from "./CurrentSong";
 
 function App() {
   const [open, setOpen] = useState(false);
+
+  const escFunction = useCallback((e) => {
+    if (e.keyCode === 27) {
+      setOpen(false)
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escFunction, false);
+  })
 
   return (
     <div className="App">
