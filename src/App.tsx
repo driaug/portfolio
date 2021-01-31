@@ -6,22 +6,23 @@ import { CurrentSong } from "./CurrentSong";
 function App() {
   const [open, setOpen] = useState(false);
 
-  const escFunction = useCallback((e) => {
-    if (e.keyCode === 27) {
-      setOpen(false)
+  const closeModal = useCallback((e) => {
+    if (e.keyCode === 27 || e.target.className.includes("modal-container")) {
+      setOpen(false);
     }
   }, []);
 
   useEffect(() => {
-    document.addEventListener("keydown", escFunction, false);
-  })
+    document.addEventListener("keydown", closeModal, false);
+    document.addEventListener("click", closeModal, false);
+  });
 
   return (
     <div className="App">
       <div className={open ? "modal-container" : "modal-container hide"}>
         <div className={"modal"}>
           <div className={"baseline"}>
-            <button className={"modal-close"} onClick={(e) => setOpen(false)}>
+            <button className={"modal-close"} onClick={() => setOpen(false)}>
               ×
             </button>
             <h1>Get in touch!</h1>
@@ -47,18 +48,19 @@ function App() {
                 <span className={"link-text"}>LinkedIn</span>
               </a>
             </li>
+
             <li>
-              <li>
-                <a
-                  href="https://github.com/driaug"
-                  target={"_blank"}
-                  rel={"noreferrer"}
-                >
-                  <GitHub />
-                  <span className={"link-text"}>Github</span>
-                </a>
-              </li>
-              <a href="mailto:dries@driaug.com">
+              <a
+                href="https://github.com/driaug"
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <GitHub />
+                <span className={"link-text"}>Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:inbox@driaug.com">
                 <Mail />
                 <span className={"link-text"}>inbox@driaug.com</span>
               </a>
@@ -66,6 +68,7 @@ function App() {
           </ul>
         </div>
       </div>
+
       <div className={open ? "content shade" : "content"}>
         <div className={"row-9"}>
           <div className={"col-6"}>
@@ -77,7 +80,7 @@ function App() {
                 Engineer.
               </p>
             </div>
-            <button onClick={(e) => setOpen(true)}>
+            <button onClick={() => setOpen(true)}>
               <div>
                 <span>G</span>
                 <span>e</span>
