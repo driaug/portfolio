@@ -1,42 +1,33 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useState } from "react";
+import { CenterModal } from "react-spring-modal";
+import "react-spring-modal/dist/index.css";
 import { GitHub, Mail, Linkedin } from "react-feather";
 import "./App.scss";
 import { CurrentSong } from "./CurrentSong";
 
 function App() {
-  const [open, setOpen] = useState(false);
-
-  const closeModal = useCallback((e) => {
-    if (e.keyCode === 27 || e.target.className.includes("modal-container")) {
-      setOpen(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    document.addEventListener("keydown", closeModal, false);
-    document.addEventListener("click", closeModal, false);
-  });
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <div className="App">
-      <div className={open ? "modal-container" : "modal-container hide"}>
-        <div className={"modal"}>
+      {}
+      <CenterModal isOpen={isOpen} onRequestClose={() => setOpen(false)}>
+        <div className={"modal-content"}>
           <div className={"baseline"}>
             <button className={"modal-close"} onClick={() => setOpen(false)}>
               ×
             </button>
             <h1>Get in touch!</h1>
           </div>
-          <div className={"modal-content"}>
-            <p>
-              Hi there! I am Dries. A 19-year old Full-Stack TypeScript engineer
-              from Belgium. I am always on the lookout for opportunities to
-              improve my skills and our society. Using the newest technologies I
-              create software that is future-ready. Feel free to reach out to
-              me!
-            </p>
-            <hr />
-          </div>
+
+          <p>
+            Hi there! I am Dries. A 19-year old Full-Stack TypeScript engineer
+            from Belgium. I am always on the lookout for opportunities to
+            improve my skills and our society. Using the newest technologies I
+            create software that is future-ready. Feel free to reach out to me!
+          </p>
+          <hr />
+
           <ul>
             <li>
               <a
@@ -67,9 +58,9 @@ function App() {
             </li>
           </ul>
         </div>
-      </div>
+      </CenterModal>
 
-      <div className={open ? "content shade" : "content"}>
+      <div className={isOpen ? "content" : "content"}>
         <div className={"row-9"}>
           <div className={"col-6"}>
             {" "}
