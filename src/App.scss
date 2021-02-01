@@ -16,10 +16,13 @@ html,body, #root, .App, .content {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  padding: 5%;
+  color: #1F1F1F;
 }
 
-.content {
-  padding: 5%;
+.baseline {
+  display: flex;
+  align-items: center;
 }
 
 .modal-content {
@@ -49,9 +52,10 @@ html,body, #root, .App, .content {
 
   ul {
     list-style-type: none;
+
     li {
-      a{
-        color: #000;
+      a {
+        color: #1F1F1F;
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -62,15 +66,10 @@ html,body, #root, .App, .content {
         }
       }
 
-      a:hover{
+      a:hover {
         text-decoration: underline;
       }
     }
-  }
-
-  .baseline {
-    display: flex;
-    align-items: center;
   }
 
   .modal-close {
@@ -182,11 +181,6 @@ html,body, #root, .App, .content {
   border-radius: 50%;
   padding: 5px;
   width: 500px;
-}
-
-.music-container {
-  display: flex;
-  align-items: center;
 }
 
 @media screen and (max-width: 760px) {

@@ -7,7 +7,7 @@ export const CurrentSong = () => {
 
   if (lastFM.status !== "playing") {
     return (
-      <div className={"music-container"}>
+      <div className={"baseline"}>
         <Music />
         <p>&nbsp;Not listening to anything</p>
       </div>
@@ -15,7 +15,7 @@ export const CurrentSong = () => {
   }
 
   return (
-    <div className={"music-container"}>
+    <div className={"baseline"}>
       <Music />
       <p>
         &nbsp;Listening to {lastFM.song.name} by {lastFM.song.artist}
