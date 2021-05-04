@@ -1,0 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/circular-std-book');
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
