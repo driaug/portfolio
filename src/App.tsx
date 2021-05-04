@@ -36,7 +36,7 @@ function App() {
       </HeroContainer>
       <TimelineContainer ref={timelineRef}>
         <IntroductionContainer>
-          <Headshot src={"/images/dries.jpeg"} />
+          <Headshot src={"/images/dries.jpeg"} alt={"Headshot Dries"}/>
           <p>
             My name is Dries and I am a Full-Stack TypeScript engineer from
             Belgium. Filled with a passion for innovation and entrepreneurship,
