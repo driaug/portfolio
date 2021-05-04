@@ -12,6 +12,7 @@ import { Timeline } from "./components/timeline";
 import { Project } from "./components/project";
 import { Icon } from "./components/icon";
 import { Footer } from "./components/footer";
+import { ScrollDown } from "./components/scroll-down";
 
 function App() {
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -33,6 +34,14 @@ function App() {
           </CTAButton>
         </TitleContainer>
         <Spotify />
+        <ScrollDown animate={{y: [-7, 0, -7]}} transition={{repeat:Infinity, duration: 1}}>
+          <svg onClick={() => timelineRef.current?.scrollIntoView()} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.25 13.75L12 19.25L6.75 13.75" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+            <path d="M12 18.25V4.75" stroke="#ffffff" stroke-Width="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+            </svg>
+        </ScrollDown>
+
+
       </HeroContainer>
       <TimelineContainer ref={timelineRef}>
         <IntroductionContainer>
