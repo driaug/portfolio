@@ -27,4 +27,16 @@ export const Project = styled(motion.div)`
     font-size: 0.9rem;
     line-height: 1.4;
   }
+
+  @media screen and (max-width: 576px) { 
+    h2 {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    p, a {
+      text-align: center;
+    }
+  }
+  
 `;
