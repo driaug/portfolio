@@ -5,7 +5,7 @@ export const IntroductionContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-right: 15px;
+  margin-bottom: 10px;
 
   h1 {
     font-size: 1.3rem;
@@ -19,8 +19,11 @@ export const IntroductionContainer = styled(motion.div)`
   }
 
   @media screen and (max-width: 576px) {
-    width: 90%;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+
+    p {
+      text-align: center;
+    }
   } ;
 `;

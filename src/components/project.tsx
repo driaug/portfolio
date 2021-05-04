@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export const Project = styled(motion.div)`
   width: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   z-index: 100;
 
   h2 {

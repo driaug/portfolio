@@ -9,6 +9,7 @@ const SpotifyContainer = styled(motion.div)`
   margin-left: 20%;
   margin-top: auto;
   padding-bottom: 25px;
+  padding-right: 10px;
   font-family: "Inter", "Roboto", sans-serif;
   z-index: -10;
 

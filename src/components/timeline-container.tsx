@@ -7,7 +7,6 @@ export const TimelineContainer = styled(motion.div)`
   display: flex;
 
   @media screen and (max-width: 576px) {
-    padding-left: 5%;
     flex-direction: column;
     align-items: center;
   } ;
