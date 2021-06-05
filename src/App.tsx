@@ -24,7 +24,7 @@ function App() {
         <>
             <HeroContainer>
                 <TitleContainer>
-                    <MainTitle>Dries Augstyns</MainTitle>
+                    <MainTitle>Dries Augustyns</MainTitle>
                     <SubTitle>Full-Stack TypeScript Engineer</SubTitle>
                     <CTAButton
                         whileHover={{scale: 1.1}}
