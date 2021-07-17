@@ -11,14 +11,19 @@ export const IntroductionContainer = styled(motion.div)`
     margin-left: 10%;
     
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 
     p {
       margin-top: 10px;
       color: #888;
-      font-size: 0.8rem;
-      line-height: 1.2rem;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+    
+    span {
+      cursor: pointer;
+      color: #3B82F6
     }
   }
 
