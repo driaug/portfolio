@@ -47,7 +47,7 @@ function App() {
             </HeroContainer>
             <TimelineContainer ref={timelineRef}>
                 <IntroductionContainer>
-                    <Headshot src={"/images/dries.jpeg"} alt={"Headshot Dries"}/>
+                    <Headshot src={"/images/dries.jpg"} alt={"Headshot Dries"}/>
                     <div>
                         <h1>Hi there!</h1>
                         <p>
