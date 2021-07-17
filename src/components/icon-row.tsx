@@ -6,6 +6,6 @@ export const IconRow = styled(motion.div)`
   
   svg {
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
   }
 `

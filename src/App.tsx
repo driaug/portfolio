@@ -8,9 +8,6 @@ import {Headshot} from "./components/headshot";
 import {CTAButton} from "./components/cta-button";
 import {Spotify} from "./components/spotify";
 import {IntroductionContainer} from "./components/introduction-container";
-import {Timeline} from "./components/timeline";
-import {Project} from "./components/project";
-import {Icon} from "./components/icon";
 import {Footer} from "./components/footer";
 import {ScrollDown} from "./components/scroll-down";
 import {IconRow} from "./components/icon-row";
@@ -50,144 +47,15 @@ function App() {
             <TimelineContainer ref={timelineRef}>
                 <IntroductionContainer>
                     <Headshot src={"/images/dries.jpeg"} alt={"Headshot Dries"}/>
-                    <p>
-                        My name is Dries and I am a Full-Stack TypeScript engineer from
-                        Belgium. Filled with a passion for innovation and entrepreneurship,
-                        I create software that is future-ready!
-                    </p>
+                    <div>
+                        <h1>Hi there!</h1>
+                        <p>
+                            My name is Dries and I am a Full-Stack Software Engineer that knows his way around
+                            TypeScript and Python. Looking to learn more about me? Check out one of the links in my
+                            footer.
+                        </p>
+                    </div>
                 </IntroductionContainer>
-                <Timeline>
-                    <h1>Projects & Experience</h1>
-                    <Project>
-                        <div>
-                            <h2>
-                                <Icon whileHover={{rotate: 360}}>
-                                    <svg
-                                        width="36"
-                                        height="36"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M4.75 9.75C4.75 8.64543 5.64543 7.75 6.75 7.75H17.25C18.3546 7.75 19.25 8.64543 19.25 9.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H6.75C5.64543 19.25 4.75 18.3546 4.75 17.25V9.75Z"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                        <path
-                                            d="M8.75 7.5V6.75C8.75 5.64543 9.64543 4.75 10.75 4.75H13.25C14.3546 4.75 15.25 5.64543 15.25 6.75V7.5"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                        <path
-                                            d="M5 13.25H19"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                        <path
-                                            d="M8.75 11.75V14.25"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                        <path
-                                            d="M15.25 11.75V14.25"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                    </svg>
-                                </Icon>
-                                WebFaster
-                            </h2>
-                            <p>
-                                My current employer. WebFaster is a venture studio based in
-                                Antwerp, Belgium. Turning bold ideas into companies in the most
-                                efficient way possible. No challenge is too large for the
-                                WebFaster team!
-                            </p>
-                            <a href={"https://webfaster.com/"}>&gt; Website</a>
-                        </div>
-                    </Project>
-                    <Project>
-                        <div>
-                            <h2>
-                                <Icon whileHover={{rotate: 360}}>
-                                    <svg
-                                        width="48"
-                                        height="48"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H6.75C5.64543 19.25 4.75 18.3546 4.75 17.25V6.75Z"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                        <path
-                                            d="M8.75 10.75L11.25 13L8.75 15.25"
-                                            stroke="#141414"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                    </svg>
-                                </Icon>
-                                Current-Currency
-                            </h2>
-                            <p>
-                                Current-Currency is an npm package which can be used to work
-                                with currencies and cryptos in Node.js. Offering functionalities
-                                like converting and formatting according to the ISO-standards.
-                            </p>
-                            <a href={"https://github.com/driaug/current-currency"}>
-                                &gt; Github
-                            </a>
-                        </div>
-                    </Project>
-                    <Project>
-                        <div>
-                            <h2>
-                                <Icon whileHover={{rotate: 360}}>
-                                    <svg
-                                        width="36"
-                                        height="36"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12 4.75L13.75 10.25H19.25L14.75 13.75L16.25 19.25L12 15.75L7.75 19.25L9.25 13.75L4.75 10.25H10.25L12 4.75Z"
-                                            stroke="#5B21B6"
-                                            strokeWidth="1.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                    </svg>
-                                </Icon>
-                                Smart Policing Hackathon
-                            </h2>
-                            <p>
-                                A hackathon organised by the Belgian Federal Police with the
-                                goal of innovating the force. Our team created the mobile
-                                application Okay, which makes it easier to report sensitive
-                                problems like abuse and assault.
-                            </p>
-                            <a href={"https://police-hackathon.be/en/"}>&gt; Website</a>
-                        </div>
-                    </Project>
-                </Timeline>
             </TimelineContainer>
             <Footer>
                 <IconRow>
@@ -200,6 +68,16 @@ function App() {
                          fill="#888" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                    <svg onClick={() => window.location.href = 'https://driaug.medium.com'} width='24' height='24'
+                         fill="#888" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                    </svg>
+                    <svg onClick={() => window.location.href = 'https://p.driaug.com'} width='24' height='24'
+                         fill="#888" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.125 0H4.875A4.865 4.865 0 0 0 0 4.875v14.25C0 21.825 2.175 24 4.875 24h6.6c2.7 0 4.875-2.175 4.875-4.875V16.65h2.775c2.7 0 4.875-2.175 4.875-4.875v-6.9C24 2.175 21.825 0 19.125 0zM16.5 1.275h2.625a3.6 3.6 0 0 1 3.6 3.6v2.7H16.5v-6.3zM15.075 9v6.45H8.85V9h6.225zM8.85 1.2h6.225v6.375H8.85V1.2zM1.275 4.8a3.6 3.6 0 0 1 3.6-3.6H7.5v6.375H1.275V4.8zM7.5 9v6.45H1.2V9h6.3zm0 13.725H4.8a3.6 3.6 0 0 1-3.6-3.6V16.8h6.3v5.925zm7.575-3.525a3.6 3.6 0 0 1-3.6 3.6H8.85v-5.925h6.225V19.2zm7.65-7.35a3.6 3.6 0 0 1-3.6 3.6H16.5V9h6.225v2.85z"/>
                     </svg>
                 </IconRow>
                 <div>© Dries Augustyns - {new Date().getFullYear()}</div>
