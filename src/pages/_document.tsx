@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href={"https://rsms.me/inter/inter.css"} />
           <link
             rel="stylesheet"
-            href="http://fonts.cdnfonts.com/css/circular-std"
+            href="https://fonts.cdnfonts.com/css/circular-std"
           />
           {/* End fonts */}
 
