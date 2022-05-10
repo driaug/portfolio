@@ -46,7 +46,7 @@ export default function WithProviders(props: AppProps) {
           "Full-Stack Software Engineer, Founder and Visionary from Belgium. Passionate about entrepreneurship, innovation and equality."
         }
         twitter={{
-          cardType: "summary",
+          cardType: "summary_large_image",
           handle: "@driaug_",
           site: "@driaug_",
         }}
