@@ -3,11 +3,12 @@ import Image from "next/image";
 import { useLastFM } from "use-last-fm";
 
 import headshot from "../../public/assets/dries.jpeg";
-import lancero from "../../public/assets/lancero.png";
-import onboarded from "../../public/assets/onboarded.png";
+import lancero from "../../public/assets/lancero_logo.png";
+import onboarded from "../../public/assets/onboarded_logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const containerVariant = {
   hidden: { scale: 0.8, opacity: 0 },
@@ -20,6 +21,7 @@ const containerVariant = {
 export default function Index() {
   const lastFM = useLastFM("driaug", "b10a87f2b9171ea735ccf53125a9b8a2");
   const introduction = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   return (
     <>
@@ -159,23 +161,106 @@ export default function Index() {
         <section>
           <h2
             className={
-              "text-center font-circular text-4xl font-bold leading-loose text-gray-900"
+              "text-center font-circular text-3xl font-bold leading-loose text-gray-900"
             }
           >
             You may know me from
           </h2>
-          <div className={"grid gap-y-32 sm:grid-cols-2"}>
-            <Link href={"/projects/lancero"} passHref>
-              <article className={"cursor-pointer transition hover:blur-sm"}>
-                <Image src={lancero} alt={"Lancero"} placeholder={"blur"} />
-              </article>
-            </Link>
-
-            <Link href={"/projects/onboarded"} passHref>
-              <article className={"cursor-pointer transition hover:blur-sm"}>
-                <Image src={onboarded} alt={"Lancero"} placeholder={"blur"} />
-              </article>
-            </Link>
+          <div className={"grid gap-8 sm:grid-cols-2"}>
+            <div className={"rounded border border-gray-300 px-6 py-4"}>
+              <div className={"flex items-center gap-6"}>
+                <Image
+                  width={60}
+                  height={60}
+                  layout={"fixed"}
+                  placeholder={"blur"}
+                  src={onboarded}
+                  alt={"Onboarded"}
+                />
+                <div className={"space-y-4"}>
+                  <div>
+                    <h3 className={"text-xl font-bold text-gray-900"}>
+                      Onboarded
+                    </h3>
+                    <p className={"text-gray-600"}>
+                      The inclusive job platform
+                    </p>
+                  </div>
+                  <motion.span
+                    onClick={() => void router.push("/projects/onboarded")}
+                    className={
+                      "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
+                    }
+                    whileHover={{ gap: "20px" }}
+                  >
+                    Discover
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M13.75 6.75L19.25 12L13.75 17.25"
+                      />
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M19 12H4.75"
+                      />
+                    </svg>
+                  </motion.span>
+                </div>
+              </div>
+            </div>
+            <div className={"rounded border border-gray-300 px-6 py-4"}>
+              <div className={"flex items-center gap-6"}>
+                <Image
+                  width={60}
+                  height={60}
+                  layout={"fixed"}
+                  placeholder={"blur"}
+                  src={lancero}
+                  alt={"Lancero"}
+                />
+                <div className={"space-y-4"}>
+                  <div>
+                    <h3 className={"text-xl font-bold text-gray-900"}>
+                      Lancero
+                    </h3>
+                    <p className={"text-gray-600"}>
+                      The fastest way to launch your viral waitlist
+                    </p>
+                  </div>
+                  <motion.span
+                    onClick={() => void router.push("/projects/lancero")}
+                    className={
+                      "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
+                    }
+                    whileHover={{ gap: "20px" }}
+                  >
+                    Discover
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M13.75 6.75L19.25 12L13.75 17.25"
+                      />
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M19 12H4.75"
+                      />
+                    </svg>
+                  </motion.span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
