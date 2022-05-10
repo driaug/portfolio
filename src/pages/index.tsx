@@ -183,7 +183,7 @@ export default function Index() {
                       Onboarded
                     </h3>
                     <p className={"text-gray-600"}>
-                      The inclusive job platform
+                      The world's first inclusive job platform
                     </p>
                   </div>
                   <motion.span
