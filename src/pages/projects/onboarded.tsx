@@ -12,32 +12,34 @@ export default function Index() {
             "flex h-full flex-1 flex-col items-center justify-center text-center"
           }
         >
-          <Link href={"/"} passHref>
-            <motion.span
-              className={
-                "flex cursor-pointer items-center gap-x-2 self-start text-xl text-gray-900 text-opacity-80 transition hover:text-opacity-100"
-              }
-              whileHover={{ gap: "20px" }}
-            >
-              Go back{" "}
-              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M13.75 6.75L19.25 12L13.75 17.25"
-                />
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19 12H4.75"
-                />
-              </svg>
-            </motion.span>
-          </Link>
+          <div className={"mt-4"}>
+            <Link href={"/"} passHref>
+              <motion.span
+                className={
+                  "flex cursor-pointer items-center gap-x-2 self-start text-lg text-gray-900 text-opacity-80 transition hover:text-opacity-100"
+                }
+                whileHover={{ gap: "20px" }}
+              >
+                Go back{" "}
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M13.75 6.75L19.25 12L13.75 17.25"
+                  />
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M19 12H4.75"
+                  />
+                </svg>
+              </motion.span>
+            </Link>
+          </div>
 
           <h1
             className={
