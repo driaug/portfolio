@@ -1,14 +1,13 @@
 import Script from "next/script";
 import Image from "next/image";
 import { useLastFM } from "use-last-fm";
+import { AnimatePresence, motion } from "framer-motion";
+import { useRef } from "react";
+import { useRouter } from "next/router";
 
 import headshot from "../../public/assets/dries.jpeg";
 import lancero from "../../public/assets/lancero_logo.png";
 import onboarded from "../../public/assets/onboarded_logo.png";
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useRef } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
 
 const containerVariant = {
   hidden: { scale: 0.8, opacity: 0 },
@@ -155,6 +154,37 @@ export default function Index() {
               </a>
               .
             </p>
+
+            <div className={"mt-2 flex gap-x-2"}>
+              <div
+                className={
+                  "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
+                }
+              >
+                TypeScript
+              </div>
+              <div
+                className={
+                  "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
+                }
+              >
+                React
+              </div>
+              <div
+                className={
+                  "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
+                }
+              >
+                Python
+              </div>
+              <div
+                className={
+                  "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
+                }
+              >
+                DevOps
+              </div>
+            </div>
           </div>
         </section>
 
@@ -168,26 +198,31 @@ export default function Index() {
           </h2>
           <div className={"grid gap-8 sm:grid-cols-2"}>
             <div className={"rounded border border-gray-300 px-6 py-4"}>
-              <div className={"flex items-center gap-6"}>
-                <Image
-                  width={60}
-                  height={60}
-                  layout={"fixed"}
-                  placeholder={"blur"}
-                  src={onboarded}
-                  alt={"Onboarded"}
-                />
+              <div
+                className={"flex flex-col gap-6 sm:flex-row sm:items-center"}
+              >
+                <div className={"relative w-20"}>
+                  <Image
+                    layout={"responsive"}
+                    placeholder={"blur"}
+                    src={onboarded}
+                    alt={"Onboarded"}
+                  />
+                </div>
+
                 <div className={"space-y-4"}>
                   <div>
                     <h3 className={"text-xl font-bold text-gray-900"}>
                       Onboarded
                     </h3>
                     <p className={"text-gray-600"}>
-                      The world's first inclusive job platform
+                      The world&apos;s first inclusive job platform
                     </p>
                   </div>
                   <motion.span
-                    onClick={() => void router.push("/projects/onboarded")}
+                    onClick={() =>
+                      void router.push("https://www.onboarded.app")
+                    }
                     className={
                       "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
                     }
@@ -215,15 +250,17 @@ export default function Index() {
               </div>
             </div>
             <div className={"rounded border border-gray-300 px-6 py-4"}>
-              <div className={"flex items-center gap-6"}>
-                <Image
-                  width={60}
-                  height={60}
-                  layout={"fixed"}
-                  placeholder={"blur"}
-                  src={lancero}
-                  alt={"Lancero"}
-                />
+              <div
+                className={"flex flex-col gap-6 sm:flex-row sm:items-center"}
+              >
+                <div className={"relative w-20"}>
+                  <Image
+                    layout={"responsive"}
+                    placeholder={"blur"}
+                    src={lancero}
+                    alt={"Lancero"}
+                  />
+                </div>
                 <div className={"space-y-4"}>
                   <div>
                     <h3 className={"text-xl font-bold text-gray-900"}>
@@ -234,7 +271,7 @@ export default function Index() {
                     </p>
                   </div>
                   <motion.span
-                    onClick={() => void router.push("/projects/lancero")}
+                    onClick={() => void router.push("https://www.lancero.app")}
                     className={
                       "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
                     }
