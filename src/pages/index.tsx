@@ -142,17 +142,7 @@ export default function Index() {
             </p>
 
             <p className={"pt-4 text-gray-900 text-opacity-70"}>
-              I&apos;m currently working on the world&apos;s first inclusive job
-              platform,{" "}
-              <a
-                className={"underline"}
-                href={"https://www.onboarded.app"}
-                target={"_blank"}
-                rel={"noreferrer"}
-              >
-                Onboarded
-              </a>
-              .
+              I&apos;m currently working at Microsoft.
             </p>
 
             <div className={"mt-2 flex gap-x-2"}>
