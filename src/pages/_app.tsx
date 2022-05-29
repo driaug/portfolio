@@ -7,6 +7,7 @@ import React from "react";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
+import Script from "next/script";
 
 /**
  * Main app component
@@ -72,6 +73,11 @@ export default function WithProviders(props: AppProps) {
               "dries,augustyns,dries augustyns,software,software engineer,founder,onboarded,software engineer,full-stack software engineer",
           },
         ]}
+      />
+
+      <Script
+        src={"https://cdn.splitbee.io/sb.js"}
+        strategy={"afterInteractive"}
       />
 
       <App {...props} />
