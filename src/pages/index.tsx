@@ -20,10 +20,7 @@ const containerVariant = {
 
 export default function Index() {
   const lastFM = useLastFM("driaug", "b10a87f2b9171ea735ccf53125a9b8a2");
-  const articles = useMedium("driaug");
   const introduction = useRef<HTMLDivElement>(null);
-
-  console.log(articles);
 
   return (
     <>
@@ -309,84 +306,6 @@ export default function Index() {
                 </div>
               </div>
             </a>
-          </div>
-        </section>
-
-        <section>
-          <h2
-            className={
-              "text-center font-circular text-3xl font-bold leading-loose text-gray-900"
-            }
-          >
-            Read my latest blogposts
-          </h2>
-          <div className={"grid gap-8 sm:grid-cols-1"}>
-            {articles.articles?.slice(0, 5).map((article) => {
-              return (
-                <>
-                  <a
-                    href={article.link}
-                    target={"_blank"}
-                    rel={"noreferrer"}
-                    key={article.guid}
-                  >
-                    <div className={"rounded border border-gray-300 px-6 py-8"}>
-                      <div
-                        className={
-                          "flex flex-col gap-6 sm:flex-row sm:items-center"
-                        }
-                      >
-                        <div className={"space-y-4"}>
-                          <div>
-                            <h3 className={"text-xl font-bold text-gray-900"}>
-                              {article.title}
-                            </h3>
-                            <p
-                              className={"text-gray-600"}
-                              dangerouslySetInnerHTML={{
-                                __html: article.description.replace(
-                                  "Continue reading on JavaScript in Plain English »",
-                                  ""
-                                ),
-                              }}
-                            ></p>
-                          </div>
-                          <motion.span
-                            className={
-                              "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
-                            }
-                            whileHover={{ gap: "20px" }}
-                          >
-                            Read post
-                            <svg
-                              width="24"
-                              height="24"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="1.5"
-                                d="M13.75 6.75L19.25 12L13.75 17.25"
-                              />
-                              <path
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="1.5"
-                                d="M19 12H4.75"
-                              />
-                            </svg>
-                          </motion.span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </>
-              );
-            })}
           </div>
         </section>
 
