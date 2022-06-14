@@ -23,7 +23,8 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "sharp": "^0.30.4",
-    "use-last-fm": "^0.6.1"
+    "use-last-fm": "^0.6.1",
+    "use-medium": "^0.6.9"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",

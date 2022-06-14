@@ -3772,6 +3772,11 @@ swr@^0.4.0:
   dependencies:
     dequal "2.0.2"
 
+swr@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-1.3.0.tgz#c6531866a35b4db37b38b72c45a63171faf9f4e8"
+  integrity sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==
+
 tailwindcss@^3.0.24:
   version "3.0.24"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.0.24.tgz#22e31e801a44a78a1d9a81ecc52e13b69d85704d"
@@ -3934,6 +3939,13 @@ use-last-fm@^0.6.1:
   integrity sha512-mbLB9NpNFC2mDpvUgylkRvjWAITjVO3j2IPgtSrdanWBEXRsjMyPaEaDUsS5rJ0wSpvYAPyOQ9XxCUve6vKqpQ==
   dependencies:
     swr "^0.4.0"
+
+use-medium@^0.6.9:
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/use-medium/-/use-medium-0.6.9.tgz#6dc6a0aae8308f7e556b5cc47e0e44363546fd67"
+  integrity sha512-HpKtLcyTtXOPdKPbsdBYGbIIdoxFpZemm0mMwqHaru8ribL8oLtB0IZQQWpygrsYFQxbpzCLG+hfbuQXjnDnaQ==
+  dependencies:
+    swr "^1.3.0"
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
