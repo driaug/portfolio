@@ -101,7 +101,7 @@ export default function Index() {
                 initial={"hidden"}
                 animate={lastFM.status === "playing" ? "show" : "hidden"}
                 className={
-                  "absolute bottom-5 flex items-center gap-2 font-medium text-gray-900 text-opacity-70 md:gap-6"
+                  "absolute bottom-5 flex items-center gap-2 font-medium overflow-hidden rounded text-gray-900 text-opacity-70 md:gap-6"
                 }
               >
                 <Image
@@ -174,138 +174,14 @@ export default function Index() {
               >
                 DevOps
               </div>
+              <div
+                  className={
+                    "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
+                  }
+              >
+                Machine Learning
+              </div>
             </div>
-          </div>
-        </section>
-
-        <section>
-          <h2
-            className={
-              "text-center font-circular text-3xl font-bold leading-loose text-gray-900"
-            }
-          >
-            You may know me from
-          </h2>
-          <div className={"grid gap-8 sm:grid-cols-2"}>
-            <a
-              href={"https://www.onboarded.app"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              <div className={"rounded border border-gray-300 px-6 py-6"}>
-                <div
-                  className={"flex flex-col gap-6 sm:flex-row sm:items-center"}
-                >
-                  <div className={"relative w-20"}>
-                    <Image
-                      layout={"responsive"}
-                      placeholder={"blur"}
-                      src={onboarded}
-                      alt={"Onboarded"}
-                    />
-                  </div>
-
-                  <div className={"space-y-4"}>
-                    <div>
-                      <h3 className={"text-xl font-bold text-gray-900"}>
-                        Onboarded
-                      </h3>
-                      <p className={"text-gray-600"}>
-                        The world&apos;s first inclusive job platform
-                      </p>
-                    </div>
-                    <motion.span
-                      className={
-                        "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
-                      }
-                      whileHover={{ gap: "20px" }}
-                    >
-                      Discover
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                          d="M13.75 6.75L19.25 12L13.75 17.25"
-                        />
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                          d="M19 12H4.75"
-                        />
-                      </svg>
-                    </motion.span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              href={"https://www.lancero.app"}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              <div className={"rounded border border-gray-300 px-6 py-6"}>
-                <div
-                  className={"flex flex-col gap-6 sm:flex-row sm:items-center"}
-                >
-                  <div className={"relative w-20"}>
-                    <Image
-                      layout={"responsive"}
-                      placeholder={"blur"}
-                      src={lancero}
-                      alt={"Lancero"}
-                    />
-                  </div>
-                  <div className={"space-y-4"}>
-                    <div>
-                      <h3 className={"text-xl font-bold text-gray-900"}>
-                        Lancero
-                      </h3>
-                      <p className={"text-gray-600"}>
-                        The fastest way to launch your viral waitlist
-                      </p>
-                    </div>
-                    <motion.span
-                      className={
-                        "flex cursor-pointer items-center gap-x-2 self-start text-gray-900 text-opacity-80 transition hover:text-opacity-100"
-                      }
-                      whileHover={{ gap: "20px" }}
-                    >
-                      Discover
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                          d="M13.75 6.75L19.25 12L13.75 17.25"
-                        />
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                          d="M19 12H4.75"
-                        />
-                      </svg>
-                    </motion.span>
-                  </div>
-                </div>
-              </div>
-            </a>
           </div>
         </section>
 
