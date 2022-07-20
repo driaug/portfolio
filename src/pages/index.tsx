@@ -3,12 +3,8 @@ import Image from "next/image";
 import { useLastFM } from "use-last-fm";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
-import { useRouter } from "next/router";
 
 import headshot from "../../public/assets/dries.jpeg";
-import lancero from "../../public/assets/lancero_logo.png";
-import onboarded from "../../public/assets/onboarded_logo.png";
-import { useMedium } from "use-medium";
 
 const containerVariant = {
   hidden: { scale: 0.8, opacity: 0 },
@@ -16,6 +12,11 @@ const containerVariant = {
     scale: 1,
     opacity: 1,
   },
+};
+
+const item = {
+  hidden: { opacity: 0, y: -50 },
+  show: { opacity: 1, y: 0 },
 };
 
 export default function Index() {
@@ -40,18 +41,18 @@ export default function Index() {
               "https://github.com/driaug",
               "https://www.driaug.com",
             ],
-            jobTitle: "Founder",
-            worksFor: {
-              "@type": "Organization",
-              name: "Onboarded",
-            },
           }),
         }}
       />
 
       <main className={"space-y-20 px-8 md:px-24 2xl:px-32"}>
         <section className={"flex min-h-screen flex-col justify-center gap-6"}>
-          <div>
+          <motion.div
+            variants={containerVariant}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: true }}
+          >
             <h1
               className={
                 "md:text-7x py-6 font-circular text-6xl font-black text-gray-900 md:py-0 md:leading-tight"
@@ -66,7 +67,7 @@ export default function Index() {
             >
               Full-Stack Software Engineer, Founder, Visionary
             </h2>
-          </div>
+          </motion.div>
 
           <motion.span
             onClick={() => introduction.current?.scrollIntoView()}
@@ -101,7 +102,7 @@ export default function Index() {
                 initial={"hidden"}
                 animate={lastFM.status === "playing" ? "show" : "hidden"}
                 className={
-                  "absolute bottom-5 flex items-center gap-2 font-medium overflow-hidden rounded text-gray-900 text-opacity-70 md:gap-6"
+                  "absolute bottom-5 flex items-center gap-2 overflow-hidden rounded font-medium text-gray-900 text-opacity-70 md:gap-6"
                 }
               >
                 <Image
@@ -145,7 +146,7 @@ export default function Index() {
               I&apos;m currently working at Microsoft.
             </p>
 
-            <div className={"mt-2 flex gap-x-2"}>
+            <div className={"mt-2 flex gap-x-2 overflow-scroll"}>
               <div
                 className={
                   "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
@@ -175,11 +176,11 @@ export default function Index() {
                 DevOps
               </div>
               <div
-                  className={
-                    "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
-                  }
+                className={
+                  "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
+                }
               >
-                Machine Learning
+                ML
               </div>
             </div>
           </div>
