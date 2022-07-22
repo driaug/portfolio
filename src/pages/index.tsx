@@ -146,7 +146,7 @@ export default function Index() {
               I&apos;m currently working at Microsoft.
             </p>
 
-            <div className={"mt-2 flex gap-x-2 overflow-scroll"}>
+            <div className={"mt-2 flex gap-x-2"}>
               <div
                 className={
                   "rounded bg-purple-100 px-3 py-0.5 text-sm text-purple-700"
