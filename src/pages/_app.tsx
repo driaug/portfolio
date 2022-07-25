@@ -44,7 +44,7 @@ export default function WithProviders(props: AppProps) {
         defaultTitle={"Dries Augustyns"}
         title={"Dries Augustyns"}
         description={
-          "Full-Stack Software Engineer, Founder and Visionary from Belgium. Passionate about entrepreneurship, innovation and equality."
+          "Full-Stack Software Engineer, Founder and Writer from Belgium. Passionate about entrepreneurship, innovation and equality."
         }
         twitter={{
           cardType: "summary_large_image",
@@ -54,7 +54,7 @@ export default function WithProviders(props: AppProps) {
         openGraph={{
           title: "Dries Augustyns",
           description:
-            "Full-Stack Software Engineer, Founder and Visionary from Belgium. Passionate about entrepreneurship, innovation and equality.",
+            "Full-Stack Software Engineer, Founder and Writer from Belgium. Passionate about entrepreneurship, innovation and equality.",
           images: [
             {
               url: "https://www.driaug.com/assets/card.png",

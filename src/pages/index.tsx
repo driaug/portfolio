@@ -65,7 +65,7 @@ export default function Index() {
                 "text-xl font-medium leading-tight tracking-wider text-gray-900 text-opacity-60 md:text-2xl"
               }
             >
-              Full-Stack Software Engineer, Founder, Visionary
+              Full-Stack Software Engineer, Founder, Writer
             </h2>
           </motion.div>
 
@@ -137,9 +137,9 @@ export default function Index() {
             <p className={"text-gray-900 text-opacity-70"}>
               Hi! My name is Dries and I&apos;d like to give you a warm welcome
               to my little space on the web. I&apos;m a full-stack software
-              engineer, founder and visionary who loves to create. My true
-              passions are entrepreneurship, innovation and equality so if those
-              are of interest to you, don&apos;t hesitate to reach out!
+              engineer, founder and writer who loves to create. My true passions
+              are entrepreneurship, innovation and equality so if those are of
+              interest to you, don&apos;t hesitate to reach out!
             </p>
 
             <p className={"pt-4 text-gray-900 text-opacity-70"}>
