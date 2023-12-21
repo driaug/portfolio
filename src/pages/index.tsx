@@ -75,13 +75,6 @@ export default function Index() {
             >
               Dries Augustyns
             </h1>
-            <h2
-              className={
-                "text-xl font-medium leading-tight tracking-wider text-neutral-500 md:text-2xl"
-              }
-            >
-              Full-Stack Engineer & Writer
-            </h2>
           </motion.div>
 
           <AnimatePresence>
