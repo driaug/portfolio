@@ -44,7 +44,7 @@ export default function WithProviders(props: AppProps) {
         defaultTitle={"Dries Augustyns"}
         title={"Dries Augustyns"}
         description={
-          "Full-Stack Software Engineer, Founder and Writer from Belgium. Passionate about entrepreneurship, innovation and equality."
+          "Full-Stack Software Engineer and Founder from Belgium."
         }
         twitter={{
           cardType: "summary_large_image",
@@ -54,7 +54,7 @@ export default function WithProviders(props: AppProps) {
         openGraph={{
           title: "Dries Augustyns",
           description:
-            "Full-Stack Software Engineer, Founder and Writer from Belgium. Passionate about entrepreneurship, innovation and equality.",
+            "Full-Stack Software Engineer and Founder from Belgium.",
           images: [
             {
               url: "https://www.driaug.com/assets/card.png",
@@ -70,14 +70,9 @@ export default function WithProviders(props: AppProps) {
           {
             property: "keywords",
             content:
-              "dries,augustyns,dries augustyns,software,software engineer,founder,onboarded,software engineer,full-stack software engineer",
+              "dries,augustyns,dries augustyns,software,software engineer,founder,software engineer,full-stack software engineer",
           },
         ]}
-      />
-
-      <Script
-        src={"https://cdn.splitbee.io/sb.js"}
-        strategy={"afterInteractive"}
       />
 
       <App {...props} />
