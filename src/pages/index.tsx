@@ -27,17 +27,20 @@ export default function Index() {
           "mx-auto max-w-4xl px-9 font-serif py-12 space-y-9 text-neutral-800 text-balance"
         }
       >
-        <h1 className={"text-6xl font-medium"}>Dries Augustyns</h1>
+        <section className={"space-y-3"}>
+          <h1 className={"text-6xl font-medium"}>Dries Augustyns</h1>
+          <p className={"text-lg"}>I build solutions that solve problems.</p>
+        </section>
 
         <section className={"space-y-3"}>
-          <h2 className={"text-4xl font-medium"}>My time is invested here</h2>
+          <h2 className={"text-3xl font-medium"}>My time is invested here</h2>
 
           <article className={"space-y-3"}>
             <Link
               href={"https://www.useplunk.com"}
               target={"_blank"}
               className={
-                "underline text-blue-600 hover:text-blue-800 visited:text-purple-600 text-3xl"
+                "underline text-blue-600 hover:text-blue-800 visited:text-purple-600 text-2xl"
               }
             >
               <h3>Plunk</h3>
@@ -55,7 +58,7 @@ export default function Index() {
         </section>
 
         <section className={"space-y-3"}>
-          <h2 className={"text-4xl font-medium"}>Connect with me here</h2>
+          <h2 className={"text-3xl font-medium"}>Connect with me here</h2>
 
           <ul className={"list-disc list-inside"}>
             <li>
@@ -79,6 +82,17 @@ export default function Index() {
                 }
               >
                 LinkedIn
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href={"mailto:i@driaug.com"}
+                className={
+                  "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                }
+              >
+                i@driaug.com
               </Link>
             </li>
           </ul>

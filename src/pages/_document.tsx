@@ -28,15 +28,15 @@ export default class MyDocument extends Document {
           <link
             rel="mask-icon"
             href="/favicon/safari-pinned-tab.svg"
-            color="#1f1f1f"
+            color="#262626"
           />
           <link rel="shortcut icon" href="/favicon/favicon.ico" />
-          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="msapplication-TileColor" content="#f9f7f4" />
           <meta
             name="msapplication-config"
             content="/favicon/browserconfig.xml"
           />
-          <meta name="theme-color" content="#4F58F5" />
+          <meta name="theme-color" content="#ffffff" />
           {/* End favicon */}
         </Head>
         <body className={"cursor-default antialiased"}>

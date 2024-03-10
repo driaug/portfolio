@@ -1,6 +1,6 @@
 {
-    "name": "Dries Augustyns",
-    "short_name": "Dries Augustyns",
+    "name": "Dries",
+    "short_name": "Dries",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#245541",
-    "background_color": "#245541",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
