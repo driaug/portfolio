@@ -13,12 +13,10 @@ export default function Index() {
             "@type": "Person",
             name: "Dries Augustyns",
             url: "https://www.driaug.com",
-            image: "https://driaug.com/images/dries.jpg",
             sameAs: [
               "https://twitter.com/driaug_",
               "https://linkedin.com/in/driaug",
               "https://github.com/driaug",
-              "https://medium.com/@driaug",
             ],
           }),
         }}

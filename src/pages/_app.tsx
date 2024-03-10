@@ -42,7 +42,7 @@ export default function WithProviders(props: AppProps) {
       <DefaultSeo
         defaultTitle={"Dries Augustyns"}
         title={"Dries Augustyns"}
-        description={"Full-Stack Software Engineer and Founder from Belgium."}
+        description={"I build solutions that solve problems."}
         twitter={{
           cardType: "summary_large_image",
           handle: "@driaug_",
@@ -50,7 +50,7 @@ export default function WithProviders(props: AppProps) {
         }}
         openGraph={{
           title: "Dries Augustyns",
-          description: "Full-Stack Software Engineer and Founder from Belgium.",
+          description: "I build solutions that solve problems.",
           images: [
             {
               url: "https://www.driaug.com/assets/card.png",
