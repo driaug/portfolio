@@ -6,14 +6,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Start fonts */}
-          <link rel="stylesheet" href={"https://rsms.me/inter/inter.css"} />
-          <link
-            rel="stylesheet"
-            href="https://fonts.cdnfonts.com/css/circular-std"
-          />
-          {/* End fonts */}
-
           {/* Start favicon */}
           <link
             rel="apple-touch-icon"

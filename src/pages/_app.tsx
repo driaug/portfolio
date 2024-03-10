@@ -1,6 +1,5 @@
 // Stylesheets
 import "../../styles/index.css";
-import "tailwindcss/tailwind.css";
 
 // Imports
 import React from "react";
@@ -43,9 +42,7 @@ export default function WithProviders(props: AppProps) {
       <DefaultSeo
         defaultTitle={"Dries Augustyns"}
         title={"Dries Augustyns"}
-        description={
-          "Full-Stack Software Engineer and Founder from Belgium."
-        }
+        description={"Full-Stack Software Engineer and Founder from Belgium."}
         twitter={{
           cardType: "summary_large_image",
           handle: "@driaug_",
@@ -53,8 +50,7 @@ export default function WithProviders(props: AppProps) {
         }}
         openGraph={{
           title: "Dries Augustyns",
-          description:
-            "Full-Stack Software Engineer and Founder from Belgium.",
+          description: "Full-Stack Software Engineer and Founder from Belgium.",
           images: [
             {
               url: "https://www.driaug.com/assets/card.png",
@@ -69,8 +65,7 @@ export default function WithProviders(props: AppProps) {
           },
           {
             property: "keywords",
-            content:
-              "dries,augustyns,dries augustyns,software,software engineer,founder,software engineer,full-stack software engineer",
+            content: "dries,augustyns,dries augustyns",
           },
         ]}
       />

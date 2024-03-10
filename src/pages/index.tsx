@@ -1,29 +1,7 @@
 import Script from "next/script";
-import Image from "next/image";
-import { useLastFM } from "use-last-fm";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRef } from "react";
-
-import headshot from "../../public/assets/dries.jpeg";
-import logo from "../../public/assets/logo.png";
-
-const containerVariant = {
-  hidden: { scale: 0.8, opacity: 0 },
-  show: {
-    scale: 1,
-    opacity: 1,
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, y: -50 },
-  show: { opacity: 1, y: 0 },
-};
+import Link from "next/link";
 
 export default function Index() {
-  const lastFM = useLastFM("driaug", "b10a87f2b9171ea735ccf53125a9b8a2");
-  const introduction = useRef<HTMLDivElement>(null);
-
   return (
     <>
       <Script
@@ -48,58 +26,64 @@ export default function Index() {
 
       <main
         className={
-          "pointer-events-none mx-auto max-w-7xl select-none space-y-20 px-6"
+          "mx-auto max-w-4xl px-9 font-serif py-12 space-y-9 text-neutral-800 text-balance"
         }
       >
-        <section className={"flex min-h-screen flex-col justify-center gap-6"}>
-          <div className="absolute top-6 h-14 w-14">
-            <Image
-              layout="fill"
-              src={logo}
-              quality={40}
-              alt={
-                "Personal logo of Dries Augustyns. A capital D in a slightly angled purple square."
-              }
-            />
-          </div>
-          <motion.div
-            variants={containerVariant}
-            initial={"hidden"}
-            whileInView={"show"}
-            viewport={{ once: true }}
-          >
-            <h1
+        <h1 className={"text-6xl font-medium"}>Dries Augustyns</h1>
+
+        <section className={"space-y-3"}>
+          <h2 className={"text-4xl font-medium"}>My time is invested here</h2>
+
+          <article className={"space-y-3"}>
+            <Link
+              href={"https://www.useplunk.com"}
+              target={"_blank"}
               className={
-                "md:text-7x py-6 font-circular text-6xl font-black text-neutral-900 md:py-0 md:leading-tight"
+                "underline text-blue-600 hover:text-blue-800 visited:text-purple-600 text-3xl"
               }
             >
-              Dries Augustyns
-            </h1>
-          </motion.div>
+              <h3>Plunk</h3>
+            </Link>
 
-          <AnimatePresence>
-            {lastFM.status === "playing" && (
-              <motion.span
-                variants={containerVariant}
-                initial={"hidden"}
-                animate={lastFM.status === "playing" ? "show" : "hidden"}
+            <div>
+              <p>The email platform for SaaS</p>
+
+              <ul className={"list-disc list-inside"}>
+                <li>Sends 250K+ emails/mo</li>
+                <li>100% bootstrapped and profitable</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section className={"space-y-3"}>
+          <h2 className={"text-4xl font-medium"}>Connect with me here</h2>
+
+          <ul className={"list-disc list-inside"}>
+            <li>
+              <Link
+                href={"https://twitter.com/driaug_"}
+                target={"_blank"}
                 className={
-                  "absolute bottom-5 flex items-center gap-2 overflow-hidden rounded font-medium text-neutral-500 md:gap-6"
+                  "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                 }
               >
-                <div className="relative h-20 w-20 overflow-hidden rounded">
-                  <Image
-                    layout="fill"
-                    src={lastFM.song.art}
-                    quality={40}
-                    alt={lastFM.song.name}
-                  />
-                </div>
-                Currently listening to {lastFM.song.name} by{" "}
-                {lastFM.song.artist}
-              </motion.span>
-            )}
-          </AnimatePresence>
+                Twitter
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href={"https://www.linkedin.com/in/driaug/"}
+                target={"_blank"}
+                className={
+                  "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                }
+              >
+                LinkedIn
+              </Link>
+            </li>
+          </ul>
         </section>
       </main>
     </>
