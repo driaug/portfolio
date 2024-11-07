@@ -18,6 +18,8 @@ export default function Index() {
             "@type": "Person",
             name: "Dries Augustyns",
             url: "https://www.driaug.com",
+            image: "https://www.driaug.com/assets/headshot.jpg",
+            jobTitle: "Software Engineer",
             sameAs: [
               "https://twitter.com/driaug_",
               "https://linkedin.com/in/driaug",
