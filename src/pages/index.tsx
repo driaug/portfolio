@@ -9,26 +9,6 @@ export const config: PageConfig = {
 export default function Index() {
   return (
     <>
-      <Script
-        id={`person-schema`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "Person",
-            name: "Dries Augustyns",
-            url: "https://www.driaug.com",
-            image: "https://www.driaug.com/assets/headshot.jpg",
-            jobTitle: "Software Engineer",
-            sameAs: [
-              "https://twitter.com/driaug_",
-              "https://linkedin.com/in/driaug",
-              "https://github.com/driaug",
-            ],
-          }),
-        }}
-      />
-
       <main
         className={
           "mx-auto max-w-4xl px-9 font-serif py-12 space-y-9 text-neutral-800 text-balance"
