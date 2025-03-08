@@ -31,7 +31,7 @@ export default function Index() {
               <p>The email platform for SaaS</p>
 
               <ul className={"list-disc list-inside"}>
-                <li>Sends 250K+ emails/mo</li>
+                <li>Sends 1M+ emails/mo</li>
                 <li>100% bootstrapped and profitable</li>
               </ul>
             </div>
