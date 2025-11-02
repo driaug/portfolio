@@ -18,6 +18,27 @@ export default function Index() {
 
           <article className={"space-y-3"}>
             <Link
+              href={"https://www.swyp.be"}
+              target={"_blank"}
+              className={
+                "underline text-blue-600 hover:text-blue-800 visited:text-purple-600 text-2xl"
+              }
+            >
+              <h3>Swyp</h3>
+            </Link>
+
+            <div>
+              <p>Automatic procurement for European dentists</p>
+
+              <ul className={"list-disc list-inside"}>
+                <li>Saves 50+ dentists more than 10% per month on dental consumables.</li>
+                <li>100% bootstrapped</li>
+              </ul>
+            </div>
+          </article>
+
+          <article className={"space-y-3"}>
+            <Link
               href={"https://www.useplunk.com"}
               target={"_blank"}
               className={
@@ -32,7 +53,7 @@ export default function Index() {
 
               <ul className={"list-disc list-inside"}>
                 <li>Sends 1M+ emails/mo</li>
-                <li>100% bootstrapped and profitable</li>
+                <li>100% bootstrapped</li>
               </ul>
             </div>
           </article>
