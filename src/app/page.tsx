@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BIO } from "./schema";
 
 export default function Index() {
   return (
@@ -10,6 +11,7 @@ export default function Index() {
       >
         <section className={"space-y-3"}>
           <h1 className={"text-6xl font-medium"}>Dries Augustyns</h1>
+          <p className={"text-lg"}>{BIO}</p>
           <p className={"text-lg"}>I build solutions that solve problems.</p>
         </section>
 
@@ -31,7 +33,10 @@ export default function Index() {
               <p>Automatic procurement for European dentists</p>
 
               <ul className={"list-disc list-inside"}>
-                <li>Saves 50+ dentists more than 10% per month on dental consumables.</li>
+                <li>
+                  Saves 50+ dentists more than 10% per month on dental
+                  consumables.
+                </li>
                 <li>100% bootstrapped</li>
               </ul>
             </div>
@@ -65,13 +70,14 @@ export default function Index() {
           <ul className={"list-disc list-inside"}>
             <li>
               <Link
-                href={"https://twitter.com/driaug_"}
+                href={"https://x.com/driaug_"}
                 target={"_blank"}
+                rel={"me"}
                 className={
                   "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                 }
               >
-                Twitter
+                X (Twitter)
               </Link>
             </li>
 
@@ -79,6 +85,7 @@ export default function Index() {
               <Link
                 href={"https://www.linkedin.com/in/driaug/"}
                 target={"_blank"}
+                rel={"me"}
                 className={
                   "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                 }
@@ -89,7 +96,21 @@ export default function Index() {
 
             <li>
               <Link
+                href={"https://github.com/driaug"}
+                target={"_blank"}
+                rel={"me"}
+                className={
+                  "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                }
+              >
+                GitHub
+              </Link>
+            </li>
+
+            <li>
+              <Link
                 href={"mailto:i@driaug.com"}
+                rel={"me"}
                 className={
                   "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                 }
